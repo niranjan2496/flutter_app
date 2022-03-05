@@ -1,30 +1,34 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/activities/HomePage.dart';
-import 'package:flutter_app/activities/LoginPage.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_app/src/login/LoginPage.dart';
+import 'package:flutter_app/src/styles/Themes.dart';
 
 void main() {
-runApp(MyApp());
+
+  runApp(MyApp());
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+      statusBarIconBrightness: Brightness.dark,
+
+  ));
+
 }
 
-
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       // only one activity can be specify
-      // home: HomePage(),
-      themeMode: ThemeMode.light,
-        theme: ThemeData(
-          primarySwatch: Colors.amber
-        ),
-        darkTheme: ThemeData(
-          brightness: Brightness.dark
-        ),
-      routes:{
-        "/":(context)=>LoginPage(),
-        "/login":(context)=>LoginPage()
+      // src.home: HomePage(),
+      debugShowCheckedModeBanner: false,
+      themeMode: ThemeMode.dark,
+      theme: MyThemes.lightThemeData(context),
+     darkTheme:MyThemes.dardThemeData(context),
+      routes: {
+        "/": (context) => LoginPage(),
+        // MyRoutes.LoginRoute: (context) => LoginPage(),
+        // MyRoutes.HomeRoute: (context) => HomePage()
       },
     );
   }

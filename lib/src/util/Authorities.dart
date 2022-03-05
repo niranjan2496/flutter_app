@@ -1,0 +1,53 @@
+
+
+class Authorities{
+  static final String ROLE_ADMIN="ROLE_ADMIN";
+  static final String ROLE_CLIENT="ROLE_CLIENT";
+  static final String ROLE_TRANSPORTER="ROLE_TRANSPORTER";
+  static final String ROLE_TEMPUSER="ROLE_TEMPUSER";
+  static final String ROLE_RESELLER="ROLE_RESELLER";
+  static final String ROLE_SUPPORT="ROLE_SUPPORT";
+  static final String CREATE_CLIENT_AUTHORITY="CREATE_CLIENT_AUTHORITY"; //only assined at the time of superclient creation
+  static final String GEOFENCE_VIEW_AUTHORITY="GEOFENCE_VIEW_AUTHORITY"; //
+  static final String GEOFENCE_CREATE_AUTHORITY="GEOFENCE_CREATE_AUTHORITY";
+  static final String POI_CREATE_AUTHORITY="POI_CREATE_AUTHORITY"; // for poi create
+  static final String TOUR_AUTHORITY="TOUR_AUTHORITY";
+  static final String CLIENT_PAYMENT_AUTHORITY="CLIENT_PAYMENT_AUTHORITY"; //not assigned to transporter and user
+  static final String FUEL_CREATE_AUTHORITY="FUEL_CREATE_AUTHORITY"; //fuel config create Authority
+  static final String FUEL_VIEW_AUTHORITY="FUEL_VIEW_AUTHORITY"; //fuel report view Authority
+  static final String LOAD_VIEW_AUTHORITY="LOAD_VIEW_AUTHORITY";
+  static final String LOAD_CREATE_AUTHORITY="LOAD_CREATE_AUTHORITY";
+  static final String E_LOCK_AUTHORITY="E_LOCK_AUTHORITY";
+  static final String ALERT_CREATE_AUTHORITY="ALERT_CREATE_AUTHORITY";
+  static final String SMS_AND_EMAIL_AUTHORITY="SMS_AND_EMAIL_AUTHORITY";
+  static final String SCHEDULED_REPORT_AUTHORITY="SCHEDULED_REPORT_AUTHORITY"; //Scheduled Report for email
+  static final String CLIENT_THEME_CHANGE_AUTHORITY="CLIENT_THEME_CHANGE_AUTHORITY";
+  static final String CLIENT_VEHICLE_CONFIG_AUTHORITY="CLIENT_VEHICLE_CONFIG_AUTHORITY";
+ static final String  USER_CHANGE_PASSWORD_AUTHORITY="USER_CHANGE_PASSWORD_AUTHORITY"; //for User to change password
+ static final String  USER_VEHICLE_LOCK_AUTHORITY="USER_VEHICLE_LOCK_AUTHORITY";  //for vehicle lock to user
+ static final String  PARKED_SCHEDULAR_AUTHORITY="PARKED_SCHEDULAR_AUTHORITY";     //Parked authority upto transporter
+ static final String  VEHICLE_SOFT_DELETE_AUTHORITY="VEHICLE_SOFT_DELETE_AUTHORITY";    //Vehicle delete authority for client
+ static final String  CLIENT_PACKET_LOG_REPORT_AUTHORITY="CLIENT_PACKET_LOG_REPORT_AUTHORITY";
+ static final String  DEVICE_SOFT_DELETE_AUTHORITY="DEVICE_SOFT_DELETE_AUTHORITY";     //Device delete authority for client
+ static final String DEVICE_INVENTORY_AUTHORITY="DEVICE_INVENTORY_AUTHORITY";	//Device Inventory Authority
+ static final String  CLIENT_CRETIFICATE_CREATE_AUTHORITY="CLIENT_CRETIFICATE_CREATE_AUTHORITY";	//client cretificate create authority
+ static final String ATTENDENCE_REPORT_VIEW_AUTHORITY="ATTENDENCE_REPORT_VIEW_AUTHORITY";	//Atendence Report view authority
+ static final String  TRANSPORTER_SOFT_DELETE_AUTHORITY="TRANSPORTER_SOFT_DELETE_AUTHORITY";
+ static final String  POLICE_REPORT_AUTHORITY="POLICE_REPORT_AUTHORITY";		//specilaly for beed police
+ static final String  BASIC_REPORTS_AUTHORITY="BASIC_REPORTS_AUTHORITY";		//distance;status;travel summary;stoppage
+ static final String  CLIENT_ANNOUNCEMENT_AUTHORITY="CLIENT_ANNOUNCEMENT_AUTHORITY";		//ClientAnnouncement Authority
+ static final String TRANSPORTER_SERVICE_ENQUIRY_CREATE_AUTORITY="TRANSPORTER_SERVICE_ENQUIRY_CREATE_AUTORITY";
+ static final String  CLIENT_SERVICE_ENQUIRY_VIEW_AUTORITY="CLIENT_SERVICE_ENQUIRY_VIEW_AUTORITY";		//Client Service view  Authority
+ static final String  VAULT_ACCESS_AUTHORITY="VAULT_ACCESS_AUTHORITY";
+ static final String ROLE_SIM_TRACKING="ROLE_SIM_TRACKING";
+ static final String SHOW_FULE_PRICE_AND_RC_AND_LICENSE_CHECK_AUTHORITY="SHOW_FULE_PRICE_AND_RC_AND_LICENSE_CHECK_AUTHORITY";
+ static final String TICKET_RAISE_AUTHORITY="TICKET_RAISE_AUTHORITY";
+ static final String TICKET_ANSWER_AUTHORITY="TICKET_ANSWER_AUTHORITY";
+ static final String REPORTS_NO_ACCESS="REPORTS_NO_ACCESS";
+ static final String SHARE_NO_ACCESS="SHARE_NO_ACCESS";
+ static final String SERVICE_ALERT_NO_ACCESS="SERVICE_ALERT_NO_ACCESS";
+ static final String  PARKING_NO_ACCESS="PARKING_NO_ACCESS";
+ static final String DRIVER_NO_ACCESS="DRIVER_NO_ACCESS";
+ static final String SETTING_NO_ACCESS="SETTING_NO_ACCESS";
+ static final String NOTIFICATION_NO_ACCESS="NOTIFICATION_NO_ACCESS";
+}
